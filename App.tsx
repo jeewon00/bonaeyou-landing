@@ -124,15 +124,17 @@ const App: React.FC = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-                <button
-                  className="group relative px-8 py-4 bg-black text-white font-bold uppercase tracking-widest overflow-hidden min-w-[240px]"
-                  onClick={() => window.alert("사전예약 신청 완료!")}
+                <a
+                  href="https://walla.my/a/boneyou"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative px-8 py-4 bg-black text-white font-bold uppercase tracking-widest overflow-hidden min-w-[240px] inline-flex items-center justify-center"
                 >
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     사전예약 신청하기 <ArrowUpRight size={18} />
                   </span>
                   <div className="absolute inset-0 bg-neutral-800 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
-                </button>
+                </a>
                 {/* Secondary 'Inquire' button removed to reduce choices */}
               </div>
             </motion.div>

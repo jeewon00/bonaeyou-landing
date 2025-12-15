@@ -172,14 +172,16 @@ export const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 1.2 }}
           className="mt-12 md:mt-16 flex flex-col md:flex-row gap-4 justify-center items-center w-full md:w-auto px-6"
         >
-          <button 
-            className="group relative w-full md:w-auto px-8 py-3 md:px-12 md:py-5 bg-black text-white text-xs md:text-sm font-bold tracking-widest uppercase rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-xl"
-            onClick={() => window.alert("사전예약 신청 페이지로 이동합니다.")}
+          <a
+            href="https://walla.my/a/boneyou"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative w-full md:w-auto px-8 py-3 md:px-12 md:py-5 bg-black text-white text-xs md:text-sm font-bold tracking-widest uppercase rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-xl inline-flex items-center justify-center"
           >
             <span className="relative z-10">사전예약 하기</span>
             <div className="absolute inset-0 bg-neutral-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-          </button>
-          
+          </a>
+
           {/* Secondary 'Pricing' button removed */}
         </motion.div>
       </div>

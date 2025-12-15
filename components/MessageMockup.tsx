@@ -106,7 +106,7 @@ export const MessageMockup: React.FC<MessageMockupProps> = ({ type, theme }) => 
                      </p>
                      <div className="mt-0.5 sm:mt-1">
                         <p className="font-bold">[사전 예약 링크]</p>
-                        <p className="text-blue-500 underline cursor-pointer break-all">www.boneyou.co.kr</p>
+                        <a href="https://walla.my/a/boneyou" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline cursor-pointer break-all">walla.my/a/boneyou</a>
                      </div>
                 </div>
             )}
