@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { Section } from './components/Section';
-import { Hero } from './components/Hero';
-import { FeatureCard } from './components/FeatureCard';
-import { WhyUseSection } from './components/WhyUseSection';
-import { ScrollIndicator } from './components/ScrollIndicator';
-import { Navigation } from './components/Navigation';
-import { SERVICE_DATA } from './constants';
-import { Zap, ArrowUpRight } from 'lucide-react';
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { Section } from "./components/Section";
+import { Hero } from "./components/Hero";
+import { FeatureCard } from "./components/FeatureCard";
+import { WhyUseSection } from "./components/WhyUseSection";
+import { ScrollIndicator } from "./components/ScrollIndicator";
+import { Navigation } from "./components/Navigation";
+import { SERVICE_DATA } from "./constants";
+import { Zap, ArrowUpRight } from "lucide-react";
 
 const App: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -26,12 +26,12 @@ const App: React.FC = () => {
 
     const container = containerRef.current;
     if (container) {
-      container.addEventListener('scroll', handleScroll);
+      container.addEventListener("scroll", handleScroll);
     }
 
     return () => {
       if (container) {
-        container.removeEventListener('scroll', handleScroll);
+        container.removeEventListener("scroll", handleScroll);
       }
     };
   }, []);
@@ -45,11 +45,10 @@ const App: React.FC = () => {
         Main Scroll Container 
         h-screen + snap-y + snap-mandatory creates the pure CSS full page scroll effect.
       */}
-      <div 
+      <div
         ref={containerRef}
         className="h-screen w-full overflow-y-scroll snap-y snap-mandatory scroll-smooth no-scrollbar"
       >
-        
         {/* SECTION 1: HERO (White) */}
         <Section className="bg-white relative">
           <Hero />
@@ -64,7 +63,7 @@ const App: React.FC = () => {
 
         {/* SECTION 3: SMS (White) */}
         <Section className="bg-white relative">
-          <FeatureCard 
+          <FeatureCard
             title={SERVICE_DATA.sms.title}
             subtitle={SERVICE_DATA.sms.subtitle}
             description={SERVICE_DATA.sms.description}
@@ -78,7 +77,7 @@ const App: React.FC = () => {
 
         {/* SECTION 4: LMS (White) */}
         <Section className="bg-white relative">
-          <FeatureCard 
+          <FeatureCard
             title={SERVICE_DATA.lms.title}
             subtitle={SERVICE_DATA.lms.subtitle}
             description={SERVICE_DATA.lms.description}
@@ -92,7 +91,7 @@ const App: React.FC = () => {
 
         {/* SECTION 5: MMS (White) */}
         <Section className="bg-white relative">
-          <FeatureCard 
+          <FeatureCard
             title={SERVICE_DATA.mms.title}
             subtitle={SERVICE_DATA.mms.subtitle}
             description={SERVICE_DATA.mms.description}
@@ -115,15 +114,20 @@ const App: React.FC = () => {
             >
               <Zap size={64} className="mx-auto mb-8 text-black" />
               <h2 className="text-4xl md:text-7xl font-bold mb-6 tracking-tight break-keep">
-                오픈 알림을<br className="md:hidden" /> 놓치지 마세요
+                오픈 알림을
+                <br className="md:hidden" /> 놓치지 마세요
               </h2>
               <p className="text-lg md:text-xl text-neutral-600 mb-10 max-w-xl mx-auto break-keep leading-relaxed">
-                지금 사전예약을 신청하시면<br/>
+                지금 사전예약을 신청하시면
+                <br />
                 서비스 오픈 시 가장 먼저 알림을 보내드립니다.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-                <button className="group relative px-8 py-4 bg-black text-white font-bold uppercase tracking-widest overflow-hidden min-w-[240px]" onClick={() => window.alert("사전예약 신청 완료!")}>
+                <button
+                  className="group relative px-8 py-4 bg-black text-white font-bold uppercase tracking-widest overflow-hidden min-w-[240px]"
+                  onClick={() => window.alert("사전예약 신청 완료!")}
+                >
                   <span className="relative z-10 flex items-center justify-center gap-2">
                     사전예약 신청하기 <ArrowUpRight size={18} />
                   </span>
@@ -136,11 +140,6 @@ const App: React.FC = () => {
 
           <div className="absolute bottom-0 left-0 w-full p-8 border-t border-black/10 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-400 uppercase tracking-widest">
             <span>© 2024 BONEYOU Service. All rights reserved.</span>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-black transition-colors">Privacy</a>
-              <a href="#" className="hover:text-black transition-colors">Terms</a>
-              <a href="#" className="hover:text-black transition-colors">Support</a>
-            </div>
           </div>
         </Section>
       </div>
