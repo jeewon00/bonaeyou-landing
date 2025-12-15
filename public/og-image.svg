@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- Logo Circle (smaller) -->
+  <circle cx="600" cy="200" r="70" fill="#151515"/>
+  <rect x="562.5" y="176.5" width="75" height="47" rx="23.5" fill="white"/>
+  <circle cx="579.25" cy="200" r="6.5" fill="#151515"/>
+  <circle cx="600" cy="200" r="6.5" fill="#8C8B8B"/>
+  <circle cx="620.75" cy="200" r="6.5" fill="#C5C4C4"/>
+
+  <!-- Service Name (more spacing) -->
+  <text x="600" y="350" font-family="'Pretendard', sans-serif" font-size="72" font-weight="bold" fill="#151515" text-anchor="middle">보내유 (BONEYOU)</text>
+
+  <!-- Description -->
+  <text x="600" y="420" font-family="'Pretendard', sans-serif" font-size="36" fill="#666666" text-anchor="middle">무료 문자 발송 서비스</text>
+  <text x="600" y="470" font-family="'Pretendard', sans-serif" font-size="32" fill="#999999" text-anchor="middle">SMS · LMS · MMS 무제한 무료</text>
+</svg>
